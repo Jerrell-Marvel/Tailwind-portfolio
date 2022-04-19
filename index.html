@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header absolute top-0 left-0 z-10 h-20 w-full items-center">
+      <div class="container mx-auto h-full">
+        <div class="relative flex h-full items-center justify-between">
+          <div class="ml-4 text-lg font-bold text-primary"><a href="#">Jerrell Marvel</a></div>
+
+          <!-- <div class="flex items-center px-4"> -->
+          <button id="hamburger" class="absolute right-4 block lg:hidden">
+            <span class="hamburger-line origin-top-left transition duration-300"></span>
+            <span class="hamburger-line transition duration-300"></span>
+            <span class="hamburger-line origin-bottom-left transition duration-300"></span>
+          </button>
+          <!-- </div> -->
+
+          <nav
+            class="navbar invisible absolute top-full right-0 z-10 mr-4 ml-4 mt-2 rounded-lg bg-white shadow-2xl shadow-slate-600 dark:overflow-hidden dark:shadow-md lg:visible lg:static lg:m-0 lg:mr-4 lg:h-full lg:w-[60%] lg:bg-transparent lg:shadow-none"
+          >
+            <ul class="lg:text-l nav-links-wrapper flex flex-col justify-between gap-4 p-4 text-xl dark:bg-slate-800 lg:h-full lg:flex-row lg:p-0 lg:dark:bg-transparent">
+              <li><a href="#home" class="inline-block w-full px-5 py-3 pr-32 hover:text-primary dark:text-white lg:flex lg:h-full lg:items-center lg:p-0">Home</a></li>
+              <li><a href="#about" class="inline-block w-full py-3 px-5 pr-40 hover:text-primary dark:text-white lg:flex lg:h-full lg:items-center lg:p-0">About</a></li>
+              <li><a href="#portfolio" class="inline-block w-full py-3 px-5 pr-40 hover:text-primary dark:text-white lg:flex lg:h-full lg:items-center lg:p-0">Portfolio</a></li>
+              <li><a href="#clients" class="inline-block w-full px-5 py-3 pr-40 hover:text-primary dark:text-white lg:flex lg:h-full lg:items-center lg:p-0">Clients</a></li>
+              <li><a href="#blogs" class="inline-block w-full py-3 px-5 pr-40 hover:text-primary dark:text-white lg:flex lg:h-full lg:items-center lg:p-0">Blogs</a></li>
+              <li><a href="#contact" class="inline-block w-full py-3 px-5 pr-40 hover:text-primary dark:text-white lg:flex lg:h-full lg:items-center lg:p-0">Contact</a></li>
+
+              <div class="ml-5 flex items-center pb-3 lg:ml-0 lg:pb-0">
+                <span class="mr-2 text-sm text-slate-500">Light</span>
+                <input type="checkbox" id="toggle" class="hidden" />
+                <label for="toggle">
+                  <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-400 p-1">
+                    <div class="toggle-circle h-4 w-4 rounded-full bg-white"></div>
+                  </div>
+                </label>
+                <span class="ml-2 text-sm text-slate-500">Dark</span>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Hero section -->
+    <section id="home" class="pt-24 dark:bg-dark">
+      <div class="container mx-auto">
+        <div class="flex flex-col sm:flex-row">
+          <div class="w-full flex-col justify-center px-4 sm:flex">
+            <h1 class="text-base font-semibold text-primary md:text-xl lg:text-3xl">Hello everyone 👋, my name is</h1>
+            <span class="lg:text-7xlxl mb-2 text-4xl font-bold text-dark dark:text-white md:text-7xl">Jerrell Marvel</span>
+            <h2 class="mb-4 text-xl font-medium text-dark dark:text-white md:text-4xl">Web Developer</h2>
+            <p class="mb-4 text-slate-500 md:text-lg lg:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, numquam?</p>
+            <a href="#" class="inline-block w-fit rounded-full bg-primary px-8 py-3 font-semibold text-white transition duration-300 hover:opacity-80 hover:shadow-lg md:text-xl"> About Me</a>
+          </div>
+
+          <div class="h-full w-full px-4 pb-8">
+            <div class="mt-6">
+              <img src="https://www.designyourway.net/blog/wp-content/uploads/2019/05/iPad-Pro-wallpaper-54-700x700.jpg" alt="" class="mx-auto max-w-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-8 dark:bg-dark md:py-16">
+      <div class="container mx-auto">
+        <div class="flex flex-col px-4 sm:flex-row sm:gap-4">
+          <div class="mb-6 w-full">
+            <h2 class="text-2xl font-bold text-primary">About Me</h2>
+            <h3 class="text-lg font-semibold dark:text-white">Lorem ipsum dolor sit amet.</h3>
+            <p class="text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam dolor aspernatur iure, saepe vitae, blanditiis dicta eaque porro voluptate rerum veritatis. Maiores, eos iste.</p>
+          </div>
+
+          <div class="w-full">
+            <h2 class="text-2xl font-bold text-primary">Social Media</h2>
+            <h3 class="text-lg font-semibold dark:text-white">Lorem ipsum dolor sit amet.</h3>
+            <p class="text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit numquam dolor aspernatur iure, saepe vitae, blanditiis dicta eaque porro voluptate rerum veritatis. Maiores, eos iste.</p>
+
+            <div class="mt-4 flex">
+              <a
+                href="https://youtube.com/webprogrammingunpas"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://youtube.com/webprogrammingunpas"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://youtube.com/webprogrammingunpas"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://youtube.com/webprogrammingunpas"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://youtube.com/webprogrammingunpas"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-slate-100 dark:bg-slate-800">
+      <div class="container mx-auto pt-16">
+        <div class="flex flex-wrap px-4 md:justify-between">
+          <div class="mb-16 w-full text-center md:px-20">
+            <h2 class="mb-2 text-lg font-bold text-primary md:text-xl">Portfolio</h2>
+            <h3 class="mb-4 text-4xl font-semibold dark:text-white md:text-5xl">Newest Project</h3>
+            <p class="text-lg text-secondary md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, quam.</p>
+          </div>
+
+          <div class="mb-16 w-full md:w-[48%]">
+            <div class="overflow-hidden rounded-lg">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/portfolio/1.png" alt="" class="w-full" />
+            </div>
+            <h4 class="mt-5 mb-3 text-2xl font-bold dark:text-white">Lorem ipsum dolor sit amet.</h4>
+            <p class="text-lg text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum optio natus totam.</p>
+          </div>
+
+          <div class="mb-16 w-full md:w-[48%]">
+            <div class="overflow-hidden rounded-lg">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/portfolio/1.png" alt="" class="w-full" />
+            </div>
+            <h4 class="mt-5 mb-3 text-2xl font-bold dark:text-white">Lorem ipsum dolor sit amet.</h4>
+            <p class="text-lg text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum optio natus totam.</p>
+          </div>
+          <div class="mb-16 w-full md:w-[48%]">
+            <div class="overflow-hidden rounded-lg">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/portfolio/1.png" alt="" class="w-full" />
+            </div>
+            <h4 class="mt-5 mb-3 text-2xl font-bold dark:text-white">Lorem ipsum dolor sit amet.</h4>
+            <p class="text-lg text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum optio natus totam.</p>
+          </div>
+          <div class="mb-16 w-full md:w-[48%]">
+            <div class="overflow-hidden rounded-lg">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/portfolio/1.png" alt="" class="w-full" />
+            </div>
+            <h4 class="mt-5 mb-3 text-2xl font-bold dark:text-white">Lorem ipsum dolor sit amet.</h4>
+            <p class="text-lg text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum optio natus totam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section id="clients" class="bg-slate-800 py-28 dark:bg-slate-700">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap px-4">
+          <div class="mb-16 w-full text-center">
+            <h2 class="mb-2 text-lg font-bold text-primary md:text-xl">Clients</h2>
+            <h3 class="mb-4 text-4xl font-semibold text-white md:text-5xl">Who have worked with us</h3>
+            <p class="text-lg text-secondary md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, maxime.</p>
+          </div>
+
+          <div class="flex w-full flex-wrap justify-center">
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/clients/google.svg" alt="Google" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/clients/google.svg" alt="Google" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/clients/google.svg" alt="Google" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/clients/google.svg" alt="Google" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blogs" class="bg-slate-100 dark:bg-slate-800">
+      <div class="container mx-auto pt-16">
+        <div class="flex flex-wrap px-4 md:justify-between">
+          <div class="mb-16 w-full text-center md:px-20">
+            <h2 class="mb-2 text-lg font-bold text-primary md:text-xl">Blogs</h2>
+            <h3 class="mb-4 text-4xl font-semibold dark:text-white md:text-5xl">Latest Article</h3>
+            <p class="text-lg text-secondary md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, cupiditate Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, quam.</p>
+          </div>
+
+          <div class="mb-16 w-full rounded-lg bg-white shadow-lg dark:bg-slate-700 md:w-[48%] xl:w-[31%]">
+            <div class="overflow-hidden rounded-t-lg">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/portfolio/1.png" alt="" class="w-full" />
+            </div>
+            <div class="p-6">
+              <h4 class="mt-5 mb-3 text-2xl font-bold dark:text-white">Lorem ipsum dolor sit amet.</h4>
+              <p class="text-lg dark:text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum optio natus totam.</p>
+              <a href="#" class="mt-4 inline-block w-fit rounded-md bg-primary px-6 py-2 font-semibold text-white transition duration-300 hover:opacity-80 hover:shadow-lg md:text-xl">Read more</a>
+            </div>
+          </div>
+
+          <div class="mb-16 w-full rounded-lg bg-white shadow-lg dark:bg-slate-700 md:w-[48%] xl:w-[31%]">
+            <div class="overflow-hidden rounded-t-lg">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/portfolio/1.png" alt="" class="w-full" />
+            </div>
+            <div class="p-6">
+              <h4 class="mt-5 mb-3 text-2xl font-bold dark:text-white">Lorem ipsum dolor sit amet.</h4>
+              <p class="text-lg dark:text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum optio natus totam.</p>
+              <a href="#" class="mt-4 inline-block w-fit rounded-md bg-primary px-6 py-2 font-semibold text-white transition duration-300 hover:opacity-80 hover:shadow-lg md:text-xl">Read more</a>
+            </div>
+          </div>
+
+          <div class="mb-16 w-full rounded-lg bg-white shadow-lg dark:bg-slate-700 md:w-[48%] xl:w-[31%]">
+            <div class="overflow-hidden rounded-t-lg">
+              <img src="https://sandhikagalih.github.io/portfolio-tailwind-css/dist/img/portfolio/1.png" alt="" class="w-full" />
+            </div>
+            <div class="p-6">
+              <h4 class="mt-5 mb-3 text-2xl font-bold dark:text-white">Lorem ipsum dolor sit amet.</h4>
+              <p class="text-lg dark:text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum optio natus totam.</p>
+              <a href="#" class="mt-4 inline-block w-fit rounded-md bg-primary px-6 py-2 font-semibold text-white transition duration-300 hover:opacity-80 hover:shadow-lg md:text-xl">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="dark:bg-slate-700">
+      <div class="container mx-auto pt-16">
+        <div class="w-full px-4 pb-16 md:px-32">
+          <div class="text-center">
+            <h2 class="mb-2 text-lg font-bold text-primary md:text-xl">Contact</h2>
+            <h3 class="mb-4 text-4xl font-semibold dark:text-white md:text-5xl">Work with me</h3>
+            <p class="text-lg text-secondary md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,Sunt, quam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, consectetur..</p>
+          </div>
+
+          <form action="" class="mt-5 flex flex-col gap-4">
+            <label for="name" class="w-full text-lg font-semibold text-primary">
+              Name :
+              <input type="text" id="name" class="mt-3 h-12 w-full rounded-lg bg-slate-200 p-2 text-dark outline-none focus:ring-2 focus:ring-primary" />
+            </label>
+            <label for="Email" class="w-full text-lg font-semibold text-primary">
+              Email :
+              <input
+                type="email"
+                id="Email"
+                class="mt-3 h-12 w-full rounded-lg bg-slate-200 p-2 text-dark outline-none invalid:border-pink-500 invalid:text-pink-600 focus:ring-2 focus:ring-primary focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
+              />
+            </label>
+            <label for="Message" class="w-full p-2 text-lg font-semibold text-primary">
+              Message :
+              <textarea id="Message" class="mt-3 h-32 w-full rounded-lg bg-slate-200 p-2 text-dark outline-none focus:ring-2 focus:ring-primary"></textarea>
+            </label>
+
+            <button class="mt-4 rounded-full bg-primary px-4 py-3 text-xl text-white">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-16">
+      <div class="container mx-auto px-4 text-white">
+        <div class="flex flex-wrap">
+          <div class="mb-12 w-full md:w-1/2 lg:w-1/3">
+            <h2 class="mb-5 text-3xl font-bold">Jerrell</h2>
+            <h3 class="mb-2 text-2xl font-semibold">Lorem ipsum dolor sit.</h3>
+            <p class="mb-2">Lorem ipsum dolor sit amet consectetur</p>
+            <p class="mb-2">Lorem ipsum dolor sit.</p>
+            <p class="mb-2">Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="mb-12 w-full md:w-1/2 lg:w-1/3">
+            <h2 class="mb-5 text-3xl font-bold">Jerrell</h2>
+            <h3 class="mb-2 text-2xl font-semibold">Lorem ipsum dolor sit.</h3>
+            <p class="mb-2">Lorem ipsum dolor sit amet consectetur</p>
+            <p class="mb-2">Lorem ipsum dolor sit.</p>
+            <p class="mb-2">Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="mb-12 w-full md:w-1/2 lg:w-1/3">
+            <h2 class="mb-5 text-3xl font-bold">Jerrell</h2>
+            <h3 class="mb-2 text-2xl font-semibold">Lorem ipsum dolor sit.</h3>
+            <p class="mb-2">Lorem ipsum dolor sit amet consectetur</p>
+            <p class="mb-2">Lorem ipsum dolor sit.</p>
+            <p class="mb-2">Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="w-full border-t border-t-slate-600 py-12 text-center">
+            <div class="mb-4 flex justify-center">
+              <a
+                href="https://youtube.com/webprogrammingunpas"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                href="https://youtube.com/webprogrammingunpas"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                href="https://youtube.com/webprogrammingunpas"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                href="https://youtube.com/webprogrammingunpas"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+
+              <a
+                href="https://youtube.com/webprogrammingunpas"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p>Made by <span class="font-semibold text-primary">Jerrell Marvel</span> with Tailwind CSS</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <a href="#home" class="invisible fixed bottom-4 right-4 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>
